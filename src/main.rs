@@ -7,6 +7,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let period = Duration::minutes(15); // arbitrary time between sips
     let sleep_duration = period.to_std()?;
 
+    println!("Reminder period set to every {:?}", sleep_duration);
+
+    println!("Waiting...");
     thread::sleep(sleep_duration);
 
     if let Err(e) = Notification::new()

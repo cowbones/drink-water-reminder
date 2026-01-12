@@ -1,11 +1,11 @@
 pkgname=drink-water-reminder
-pkgver=0.0.1
+pkgver=0.0.3
 pkgrel=1
 pkgdesc="Water reminder notification ft my cat"
 arch=('x86_64')
 url="https://github.com/cowbones/drink-water-reminder"
 license=('MIT')
-depends=()
+depends=('libnotify')
 makedepends=('cargo')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
 sha256sums=('SKIP')

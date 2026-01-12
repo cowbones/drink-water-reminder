@@ -1,5 +1,5 @@
 [Unit]
-Description=Water reminder notification ft my cat
+Description=hydration reminder
 After=graphical-session.target
 
 [Service]
