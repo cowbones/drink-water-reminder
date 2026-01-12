@@ -7,16 +7,18 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let period = Duration::minutes(15); // arbitrary time between sips
     let sleep_duration = period.to_std()?;
 
-    println!("{}", now.format("%I:%M %p"));
-    println!("{:?}", sleep_duration);
-
     thread::sleep(sleep_duration);
 
-    Notification::new()
+    if let Err(e) = Notification::new()
         .summary("Drink water!")
         .body("Dumbass.")
         .icon("water-notify")
-        .show()?;
+        .show()
+    {
+        println!("Push notification at {} failed! Error: {}", now.format("%I:%M %p"), e);
+    } else {
+        println!("Notification sent at {}", now.format("%I:%M %p"));
+    }
 
     Ok(())
 }

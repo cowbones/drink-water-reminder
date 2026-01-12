@@ -24,8 +24,7 @@ target
 /pkg/
 /src/*
 !/src/main.rs
-!/src/**/*.rs
 
 # Built packages
-*.pkg.tar.*
-*.log
+*.tar.gz
+*.pkg.tar.zst
