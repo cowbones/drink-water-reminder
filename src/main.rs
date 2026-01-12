@@ -6,7 +6,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let period = Duration::minutes(15);
     let sleep_duration = period.to_std()?;
 
-    println!("Hydration reminder started");
     println!("Reminder period set to every {:?}", sleep_duration);
 
     loop {
