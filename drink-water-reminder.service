@@ -1,0 +1,12 @@
+[Unit]
+Description=Water reminder notification ft my cat
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/drink-water-reminder
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=default.target
