@@ -5,8 +5,8 @@ After=graphical-session.target
 [Service]
 Type=simple
 ExecStart=/usr/bin/drink-water-reminder
-Restart=always
-RestartSec=1
+Restart=on-failure
+RestartSec=5
 
 [Install]
 WantedBy=default.target
