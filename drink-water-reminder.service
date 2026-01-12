@@ -1,5 +1,5 @@
 [Unit]
-Description=hydration reminder
+Description=Hydration reminder
 After=graphical-session.target
 
 [Service]

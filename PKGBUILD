@@ -1,7 +1,7 @@
 pkgname=drink-water-reminder
 pkgver=0.0.3
 pkgrel=1
-pkgdesc="Water reminder notification ft my cat"
+pkgdesc="Hydration reminder"
 arch=('x86_64')
 url="https://github.com/cowbones/drink-water-reminder"
 license=('MIT')
