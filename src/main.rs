@@ -4,7 +4,7 @@ use std::thread;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let now = Local::now();
-    let period = Duration::seconds(15); // arbitrary time between sips
+    let period = Duration::minutes(15); // arbitrary time between sips
     let sleep_duration = period.to_std()?;
 
     println!("{}", now.format("%I:%M %p"));
