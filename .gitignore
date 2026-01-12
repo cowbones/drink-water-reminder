@@ -28,3 +28,6 @@ target
 # Built packages
 *.tar.gz
 *.pkg.tar.zst
+
+# vimspector
+.vimspector.json
