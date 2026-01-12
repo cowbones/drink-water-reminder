@@ -20,10 +20,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             .show()
         {
             eprintln!(
-                "Push notification at {} failed! Error: {}", now.format("%I:%M %p"), e
+                "Push notification at {} failed! Error: {}", now.format("%H:%M:%S"), e
             );
         } else {
-            println!("Notification sent at {}", now.format("%I:%M %p"));
+            println!("Notification sent at {}", now.format("%H:%M:%S"));
         }
     }
 }

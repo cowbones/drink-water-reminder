@@ -1,16 +1,16 @@
-# Drink water notifier
+# Drink Water Reminder
 
 Simple popup that tells you to take a drink of water. Only really supported in
 Arch. Made public for fun.
 
-## install
+## Install
 
 ```bash
 makepkg -si
 systemctl --user enable --now drink-water-reminder.service
 ```
 
-## uninstall
+## Uninstall
 
 ```bash
 systemctl --user disable --now drink-water-reminder.service
